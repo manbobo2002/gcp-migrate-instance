@@ -1,4 +1,4 @@
-current_snapshot="wp-20200610" ## Only need to change snapshot source name, disk-size and machine-type
+current_snapshot="wp-20200610"
 instance_name="wp-instance-20200610"
 image_disk="wp-image-disk"
 

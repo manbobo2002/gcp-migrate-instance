@@ -1,19 +1,19 @@
-export existing_disk="openlitespeed-wordpress-1-vm"
-export current_snapshot="wp-20200610" ## Only need to change snapshot source name, disk-size and machine-type
+export existing_disk="openlitespeed-wordpress-1-vm" # need to change your target disk
+export current_snapshot="wp-20200610"
 export instance_name="wp-instance-20200610"
 export image_disk="wp-image-disk"
 export bucket="custom-image-storage-20200610"
 export tmp_disk_size=50GB # around 1.5 times original size
 
 
-gcloud config set compute/zone us-west3-a
-gcloud config set compute/region us-west3
+gcloud config set compute/zone us-west3-a # choose the instance zone
+gcloud config set compute/region us-west3 # choose the instance region
 
 
 ## Create snapshot
 gcloud compute disks snapshot ${existing_disk} \
 --zone us-west3-a --snapshot-names ${current_snapshot}
-
+con
 
 gcloud compute disks create ${image_disk} --zone=us-west3-a --source-snapshot ${current_snapshot}
 

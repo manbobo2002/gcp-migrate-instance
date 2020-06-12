@@ -8,4 +8,4 @@ Fully migrate the instance to another account or project
 ![image](https://github.com/manbobo2002/gcp-migrate-instance/blob/master/solution%20diagram.PNG)  
 
 # How to setup:  
-Please visit https://medium.com/google-cloud/hands-on-vpc-peering-configuration-on-gcp-a6a04d50597d
+Please visit https://cloudtutorial.ddns.net/2020/06/12/fully-migrate-gcp-instance-to-another-project-or-account/
